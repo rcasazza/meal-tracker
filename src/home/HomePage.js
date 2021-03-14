@@ -17,7 +17,6 @@ export const HomePage = () => {
     }
 
     const onDeleteIngredient = async (name) => {
-        const meals = await fetch('/meals', {method: 'get'});
         const response = await fetch(`/ingredient/${name}`, {method: 'delete'});
         const updatedIngredients = await response.json();
         setIngredients(updatedIngredients);

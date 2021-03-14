@@ -36,7 +36,7 @@ export const AddIngredientPage = () => {
                 <h1>Add Ingredient</h1>
                 <input
                     type="text"
-                    placeHolder="Enter ingredient name here"
+                    placeholder="Enter ingredient name here"
                     className="space-after space-before full-width"
                     value={name}
                     onChange={e => setName(e.target.value)} />
